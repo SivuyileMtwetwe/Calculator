@@ -1,0 +1,19 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btns{
+   
+    height: 100px;
+    width: 100px; 
+}
