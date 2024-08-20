@@ -37,3 +37,13 @@ document.getElementById('display').value = result
 function del(){
 display.value = display.value.toString().slice(0,-1)
 }
+
+function sqrt(){
+    let display = document.getElementById('display').value
+
+    let result = eval(Math.sqrt(display))
+    
+
+    
+    document.getElementById('display').value = result
+}
