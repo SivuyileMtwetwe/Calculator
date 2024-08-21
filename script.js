@@ -17,33 +17,49 @@ function calculate(){
     }
 }
 
- function percentage(){
+//  function percentage(){
 
-//   let display = parseFloat(document.getElementById('display').value)
+// //   let display = parseFloat(document.getElementById('display').value)
 
-//   let percentage = display/100
+// //   let percentage = display/100
 
-//   document.getElementById('display').value =percentage
+// //   document.getElementById('display').value =percentage
 
-let display = document.getElementById('display').value
+// let display = document.getElementById('display').value
 
-let result = eval(display)
+// let result = eval(display)
 
-result = result/100
+// result = result/100
 
-document.getElementById('display').value = result
-}
+// document.getElementById('display').value = result
+// }
 
+function percentage() {
+    const currentValue = parseFloat(display.value);
+    const percentageValue = currentValue / 100;
+    display.value = percentageValue.toString();
+  }
+  
 function del(){
 display.value = display.value.toString().slice(0,-1)
 }
 
-function sqrt(){
-    let display = document.getElementById('display').value
+// function sqrt(){
+//     let display = document.getElementById('display').value
 
-    let result = eval(Math.sqrt(display))
+//     let result = eval(Math.sqrt(display))
     
 
     
-    document.getElementById('display').value = result
-}
+//     document.getElementById('display').value = result
+// }
+
+function sqrt() {
+    const currentValue = parseFloat(display.value);
+    if (currentValue < 0) {
+      display.value = 'Error';
+    } else {
+      const sqrtValue = Math.sqrt(currentValue);
+      display.value = sqrtValue.toString();
+    }
+  }
