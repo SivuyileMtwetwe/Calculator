@@ -17,22 +17,7 @@ function calculate(){
     }
 }
 
-//  function percentage(){
 
-// //   let display = parseFloat(document.getElementById('display').value)
-
-// //   let percentage = display/100
-
-// //   document.getElementById('display').value =percentage
-
-// let display = document.getElementById('display').value
-
-// let result = eval(display)
-
-// result = result/100
-
-// document.getElementById('display').value = result
-// }
 
 function percentage() {
     const currentValue = parseFloat(display.value);
@@ -44,15 +29,7 @@ function del(){
 display.value = display.value.slice(0,-1)
 }
 
-// function sqrt(){
-//     let display = document.getElementById('display').value
 
-//     let result = eval(Math.sqrt(display))
-    
-
-    
-//     document.getElementById('display').value = result
-// }
 
 function sqrt() {
     const currentValue = parseFloat(display.value);
