@@ -41,7 +41,7 @@ function percentage() {
   }
   
 function del(){
-display.value = display.value.toString().slice(0,-1)
+display.value = display.value.slice(0,-1)
 }
 
 // function sqrt(){
